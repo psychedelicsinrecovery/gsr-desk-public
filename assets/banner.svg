@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="t d">
+  <title id="t">GSR Desk</title>
+  <desc id="d">A door of their own for the fellowship's General Service Representatives. The picture: a sun held by an open circle, and 4 waves drawing in beneath it. With reduced motion, the finished picture shows at once.</desc>
+  <style>
+    /* Motion only for readers who have not asked for less. Outside this block everything is in its finished state. */
+    @media (prefers-reduced-motion: no-preference) {
+      .draw { stroke-dasharray: 100; animation: draw 2.6s cubic-bezier(.4,0,.2,1) both; }
+      .arrive { animation: arrive .5s ease-out both; }
+      .breathe { transform-box: fill-box; transform-origin: center; animation: breathe 8s steps(48) 3s infinite; }
+      .halo { transform-box: fill-box; transform-origin: center; animation: halo 5s steps(60) 3.6s infinite; }
+    }
+    @keyframes draw { from { stroke-dashoffset: 100 } to { stroke-dashoffset: 0 } }
+    @keyframes arrive { from { opacity: 0 } to { opacity: 1 } }
+    @keyframes breathe { 0%, 100% { transform: scale(1) } 50% { transform: scale(1.07) } }
+    @keyframes halo { 0% { opacity: .55; transform: scale(1) } 70%, 100% { opacity: 0; transform: scale(2.1) } }
+    .halo { opacity: 0 }
+  </style>
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d153a"/><stop offset="1" stop-color="#111126"/></linearGradient>
+    <linearGradient id="line" gradientUnits="userSpaceOnUse" x1="668" y1="0" x2="1160" y2="0"><stop offset="0.00" stop-color="#7c3aed"/><stop offset="0.50" stop-color="#7c55c4"/><stop offset="1.00" stop-color="#baa6e4"/></linearGradient>
+    <linearGradient id="fade" gradientUnits="userSpaceOnUse" x1="620" y1="0" x2="1200" y2="0"><stop offset="0" stop-color="#7c55c4" stop-opacity="0"/><stop offset=".35" stop-color="#7c55c4"/><stop offset="1" stop-color="#baa6e4"/></linearGradient>
+    <clipPath id="card"><rect width="1200" height="260" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <!-- an opaque ground: the same picture on GitHub's light and dark themes -->
+    <rect width="1200" height="260" fill="url(#ground)"/>
+    <circle class="breathe" cx="950.2" cy="101.6" r="46" fill="url(#line)"/>
+    <path class="draw" pathLength="100" d="M991.7 50.2A66 66 0 1 1 926.5 40.0" fill="none" stroke="#7c55c4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:0.20s"/>
+    <path class="draw" pathLength="100" d="M620 164.0Q675.3 148.5 730.5 164.0Q785.8 179.5 841.1 164.0Q896.3 148.5 951.6 164.0Q1006.8 179.5 1062.1 164.0Q1117.4 148.5 1172.6 164.0Q1227.9 179.5 1283.2 164.0" fill="none" stroke="url(#fade)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:0.40s"/>
+    <path class="draw" pathLength="100" d="M620 183.3Q680.1 204.9 740.2 183.3Q800.3 161.8 860.4 183.3Q920.5 204.9 980.6 183.3Q1040.7 161.8 1100.8 183.3Q1160.9 204.9 1221.0 183.3Q1281.1 161.8 1341.2 183.3" fill="none" stroke="url(#fade)" stroke-width="2.8000000000000003" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:0.90s"/>
+    <path class="draw" pathLength="100" d="M620 202.7Q685.2 221.7 750.3 202.7Q815.5 183.6 880.6 202.7Q945.8 221.7 1011.0 202.7Q1076.1 183.6 1141.3 202.7Q1206.4 221.7 1271.6 202.7" fill="none" stroke="url(#fade)" stroke-width="2.4000000000000004" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:1.40s"/>
+    <path class="draw" pathLength="100" d="M620 222.0Q692.0 234.8 764.0 222.0Q836.1 209.2 908.1 222.0Q980.1 234.8 1052.1 222.0Q1124.2 209.2 1196.2 222.0Q1268.2 234.8 1340.2 222.0" fill="none" stroke="url(#fade)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:1.90s"/>
+    <rect x="0.0" y="248" width="300.5" height="12" fill="#3b1f6e"/><rect x="300.0" y="248" width="300.5" height="12" fill="#7c3aed"/><rect x="600.0" y="248" width="300.5" height="12" fill="#5b2bb5"/><rect x="900.0" y="248" width="300.5" height="12" fill="#ede9fe"/>
+    <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif"><text x="56" y="56.6" fill="#9373ce" font-size="15" font-weight="700" letter-spacing=".6">PIR® · Psychedelics In Recovery™</text><text x="56" y="122.2" fill="#ede9fe" font-size="60" font-weight="700" letter-spacing="-.5">GSR Desk</text><text x="56" y="166.0" fill="#d0cbe3" font-size="23">A door of their own for the fellowship's General</text><text x="56" y="196.8" fill="#d0cbe3" font-size="23">Service Representatives.</text></g>
+  </g>
+</svg>
